@@ -188,7 +188,7 @@ font-family: "bangers";
 .product{
  border: 1px solid rgba(128, 128, 128, 0.322);
  border-radius: 10px;
- 
+ height: 500px;
  width: 100%;
  max-width: 270px;
 
