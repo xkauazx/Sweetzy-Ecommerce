@@ -93,21 +93,47 @@ max-width: 100px;
   font-size: 20px;
   padding: 2px;
 }
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #main-page{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  border-radius: 10px;
+  width: 95%;
+  margin-top: 40px
 }
 #title-page{
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-left: 35px
 }
 #title-page > h1{
+font-family: "bangers";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 3px 3px rgb(85, 85, 85);
+  
+}
 
+#title-page > p{
+font-family: "bangers";
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px;
+  color: orange;
+   text-shadow: 1px 3px 3px rgb(19, 19, 19);
   
 }
 #sec-img-page{
@@ -121,3 +147,113 @@ max-width: 100px;
   width: 100%;
   max-width: 750px;
 }
+
+#shop{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  width: 95%;
+  margin-top: 40px
+}
+.filter-and-text{
+  width: 100%;
+}
+#filter{
+   border: 1px solid rgba(128, 128, 128, 0.322);
+  border-radius: 7px;
+  padding: 2px;
+  font-size: 14px;
+  width: 12%;
+  padding: 8px;
+}
+#shop{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 50px;
+}
+.products{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.product{
+ border: 1px solid rgba(128, 128, 128, 0.322);
+ border-radius: 10px;
+ 
+ width: 100%;
+ max-width: 270px;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+
+
+}
+.divider {
+   border: 1px solid rgba(128, 128, 128, 0.322);
+
+  width: 100%;
+}
+.product > img{
+  width: 100%;
+  max-width: 200px;
+  
+}
+
+.rating {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  color: #000000;
+}
+
+.fa-star {
+  color: #ff2727; /* rosa claro como na imagem */
+  font-size: 13px;
+}
+.product p{
+  font-size: 17px;
+  color: #888888;
+}
+.product h4{
+  font-size: 18px;
+  color: rgb(22, 31, 51);
+}
+.product h5{
+  font-size: 16px;
+  color: rgb(56, 56, 56);
+}
+.div-btn{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn-cart{
+  width:90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(22, 31, 51); ;
+  font-weight: bold;
+  background-color: rgba(135, 211, 255, 0.37);
+  margin-top: 10px;
+  
+}
+
