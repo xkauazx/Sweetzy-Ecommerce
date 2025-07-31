@@ -179,7 +179,8 @@ font-family: "bangers";
 }
 .products{
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
   align-items: center;
   justify-content: center;
