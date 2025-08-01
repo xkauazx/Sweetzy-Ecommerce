@@ -255,6 +255,30 @@ font-family: "bangers";
   font-weight: bold;
   background-color: rgba(135, 211, 255, 0.37);
   margin-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+.container-quantity{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   
+ 
+}
+.container-subtotal{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+}
+.quantity{
+  color: #ff2727;
+}
+.btn-more{
+  padding: 2px 8px 2px 8px;
+  font-size: 20px;
+
 }
 
