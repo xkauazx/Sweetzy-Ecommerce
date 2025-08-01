@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
@@ -7,57 +7,62 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  
-}
-
-header{
-width: 100%;
 
 }
 
-#list{
+header {
+  width: 100%;
+
+}
+
+#list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   list-style: none;
   gap: 20px;
-  padding:10px 60px 10px 60px;
+  padding: 10px 60px 10px 60px;
   border: 1px solid rgba(128, 128, 128, 0.322);
-  
- 
-
-}
-#img-logo{
-width: 100%;
-max-width: 100px;
-
 
 
 
 }
-#input-nav{
+
+#img-logo {
+  width: 100%;
+  max-width: 100px;
+
+
+
+
+}
+
+#input-nav {
   width: 100%;
   padding: 15px;
-    border-radius: 7px;
-    border: 1px solid rgba(128, 128, 128, 0.322);
-    display: flex;
+  border-radius: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  display: flex;
   align-items: center;
 }
-#input-nav::placeholder{
+
+#input-nav::placeholder {
 
   font-size: 18px;
   color: rgb(194, 194, 194);
 
 }
-#cart{
+
+#cart {
 
   border: 1px solid rgba(128, 128, 128, 0.322);
   border-radius: 7px;
   padding: 2px;
   font-size: 14px;
 }
-#cart a{
+
+#cart a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: flex;
@@ -65,119 +70,134 @@ max-width: 100px;
   padding: 1px;
 
 }
-#cart  a div span,p {
+
+#cart a div span,
+p {
   padding: 1px;
 
 }
-.fa-cart-shopping{
+
+.fa-cart-shopping {
   color: rgb(255, 213, 98);
   font-size: 20px;
   padding: 2px;
 }
-#login{
- 
+
+#login {
+
   border: 1px solid rgba(128, 128, 128, 0.322);
   border-radius: 7px;
   padding: 2px;
   font-size: 14px;
 }
+
 #login a {
-    text-decoration: none;
+  text-decoration: none;
   color: black;
   display: flex;
   gap: 3px;
   padding: 1px;
 }
-.fa-user{
-   color: rgb(255, 213, 98);
+
+.fa-user {
+  color: rgb(255, 213, 98);
   font-size: 20px;
   padding: 2px;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#main-page{
+
+#main-page {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(128, 128, 128, 0.322);
+  border: 1px solid #aaaaaa;
   border-radius: 10px;
   width: 95%;
   margin-top: 40px
 }
-#title-page{
+
+#title-page {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 35px
 }
-#title-page > h1{
-font-family: "bangers";
+
+#title-page>h1 {
+  font-family: "bangers";
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
   color: rgb(0, 0, 0);
   text-shadow: 1px 3px 3px rgb(85, 85, 85);
-  
+
 }
 
-#title-page > p{
-font-family: "bangers";
+#title-page>p {
+  font-family: "bangers";
   font-weight: 400;
   font-style: normal;
-  font-size:25px;
+  font-size: 25px;
   color: orange;
-   text-shadow: 1px 3px 3px rgb(19, 19, 19);
-  
+  text-shadow: 1px 3px 3px rgb(19, 19, 19);
+
 }
-#sec-img-page{
-   flex: 1;
+
+#sec-img-page {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#img-page{
+
+#img-page {
   width: 100%;
   max-width: 750px;
 }
 
-#shop{
-   display: flex;
+#shop {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
+
   width: 95%;
   margin-top: 40px
 }
-.filter-and-text{
+
+.filter-and-text {
   width: 100%;
 }
-#filter{
-   border: 1px solid rgba(128, 128, 128, 0.322);
+
+#filter {
+  border: 1px solid rgba(128, 128, 128, 0.322);
   border-radius: 7px;
   padding: 2px;
   font-size: 14px;
   width: 12%;
   padding: 8px;
 }
-#shop{
+
+#shop {
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   gap: 50px;
 }
-.products{
+
+.products {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -186,30 +206,32 @@ font-family: "bangers";
   justify-content: center;
   gap: 50px;
 }
-.product{
- border: 1px solid rgba(128, 128, 128, 0.322);
- border-radius: 10px;
- height: 500px;
- width: 100%;
- max-width: 270px;
 
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 10px;
+.product {
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  height: 500px;
+  width: 100%;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
 
 }
+
 .divider {
-   border: 1px solid rgba(128, 128, 128, 0.322);
+  border: 1px solid rgba(128, 128, 128, 0.322);
 
   width: 100%;
 }
-.product > img{
+
+.product>img {
   width: 100%;
   max-width: 200px;
-  
+
 }
 
 .rating {
@@ -225,60 +247,87 @@ font-family: "bangers";
 }
 
 .fa-star {
-  color: #ff2727; /* rosa claro como na imagem */
+  color: #ff2727;
+  /* rosa claro como na imagem */
   font-size: 13px;
 }
-.product p{
+
+.product p {
   font-size: 17px;
   color: #888888;
 }
-.product h4{
+
+.product h4 {
   font-size: 18px;
   color: rgb(22, 31, 51);
 }
-.product h5{
+
+.product h5 {
   font-size: 16px;
   color: rgb(56, 56, 56);
 }
-.div-btn{
+
+.div-btn {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.btn-cart{
-  width:90%;
+
+.btn-cart {
+  width: 90%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid rgb(22, 31, 51); ;
+  border: 1px solid rgb(22, 31, 51);
+  ;
   font-weight: bold;
   background-color: rgba(135, 211, 255, 0.37);
   margin-top: 10px;
   cursor: pointer;
-  display: none;
+  display: block;
 }
-.container-quantity{
+
+.container-quantity {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
- 
-}
-.container-subtotal{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+
 
 }
-.quantity{
+
+.container-subtotal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.quantity {
   color: #ff2727;
 }
-.btn-more{
+
+.btn-more {
   padding: 2px 8px 2px 8px;
   font-size: 20px;
 
 }
 
+.btn-less {
+  padding: 2px 6px 2px 6px;
+  font-size: 19px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+
+}
+.toggle{
+  display: block;
+}
