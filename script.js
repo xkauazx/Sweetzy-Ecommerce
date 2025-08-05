@@ -1,29 +1,34 @@
-const buttonCart = document.querySelectorAll(".btn-cart")
+const products = document.querySelectorAll(".product");
 
+let counter = 0;
 
-buttonCart.forEach((button) => {
+products.forEach((product) => {
+    const button = product.querySelector(".btn-cart");
+    const container = product.querySelector(".container");
+    const quantity = product.querySelector(".quantity");
+    const btnMore = product.querySelector(".btn-more");
+    const btnLess = product.querySelector(".btn-less");
+
+    let counter = 0;
+
+    // Botão "Adicionar ao carrinho"
     button.addEventListener('click', () => {
-        const product = button.closest('.product')
-        const container = product.querySelector('.container')
-        container.classList.toggle('toggle')
-        button.style.display = 'none'
+        container.classList.toggle('toggle');
+        button.style.display = 'none';
+        quantity.textContent = counter; // valor inicial
+    });
 
-        })
-    })
+    // Botão "+"
+    btnLess.addEventListener('click', () => {
+        counter++;
+        quantity.textContent = counter;
+    });
 
-const  btnMore = document.querySelectorAll(".btn-more")    
-const btnLess = document.querySelectorAll(".btn-less")
-let quantity = document. querySelectorAll(".quantitity")
-
-quantity = 0
-
-
-btnLess.forEach((button) =>{
-button.addEventListener('click', () => {
-
-quantity.innerHTML = `${quantity}`
-
-quantity++
-
-})
-})
+    // Botão "-"
+    btnMore.addEventListener('click', () => {
+        if (counter > 0) {
+            counter--;
+            quantity.textContent = counter;
+        }
+    });
+});
