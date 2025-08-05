@@ -8,27 +8,34 @@ products.forEach((product) => {
     const quantity = product.querySelector(".quantity");
     const btnMore = product.querySelector(".btn-more");
     const btnLess = product.querySelector(".btn-less");
+    const subtotal = product.querySelector('.subtotal')
+    const id = product.dataset.id;
+    const nome = product.dataset.nome;
+    const preco = parseFloat(product.dataset.price);
 
     let counter = 0;
+    subtotal.textContent = 0;
 
-    // Botão "Adicionar ao carrinho"
     button.addEventListener('click', () => {
         container.classList.toggle('toggle');
         button.style.display = 'none';
-        quantity.textContent = counter; // valor inicial
+        quantity.textContent = counter; 
     });
 
-    // Botão "+"
+ 
     btnLess.addEventListener('click', () => {
-        counter++;
+         counter++;
         quantity.textContent = counter;
+     subtotal.textContent = (counter * preco).toFixed(2);
+
     });
 
-    // Botão "-"
+
     btnMore.addEventListener('click', () => {
-        if (counter > 0) {
-            counter--;
-            quantity.textContent = counter;
+        if(counter > 0 ){
+                       counter--;
+        quantity.textContent = counter;
+      subtotal.textContent = (counter * preco).toFixed(2);
         }
     });
 });
