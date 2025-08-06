@@ -356,12 +356,12 @@ main {
 #main-cart{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: #ff2727;
+
+
   flex-grow: 1;
    flex-grow: 1;
-  background-color: red; /* só para visualização, remova depois */
+
   overflow: auto; /* permite rolagem se o conteúdo do main ultrapassar */
 }
 #section-cart{
@@ -370,12 +370,16 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
+  background-color: aqua;
 
 }
 #div-title{
   display: flex;
   flex-direction: row;
+ background-color: #ccc;
+  width: 80%;
   gap: 10px;
+ 
 
 }
 .fa-bag-shopping{
@@ -385,10 +389,11 @@ main {
 .container-subtotal{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   justify-content: center;
   gap: 10px;
   border: 1px solid gray;
+  width: 80%;
 }
 #section-items{
   display: flex;
@@ -396,5 +401,7 @@ main {
   align-items: center;
   justify-content: center;
   flex: 2;
+  
+  background-color: rgb(23, 114, 114);
   
 }
