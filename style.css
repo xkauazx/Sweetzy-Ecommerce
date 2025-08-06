@@ -293,11 +293,12 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
 
 
 }
 
-.container-subtotal {
+.div-subtotal {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -310,24 +311,90 @@ main {
 }
 
 .btn-more {
-  padding: 2px 8px 2px 8px;
+    width: 30px;
+  height: 30px; 
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
   font-size: 20px;
+ 
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 
 }
 
 .btn-less {
-  padding: 2px 6px 2px 6px;
-  font-size: 19px;
+     width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   display: none;
 
 }
 .toggle{
   display: block;
+}
+#body-cart{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#main-cart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff2727;
+  flex-grow: 1;
+   flex-grow: 1;
+  background-color: red; /* só para visualização, remova depois */
+  overflow: auto; /* permite rolagem se o conteúdo do main ultrapassar */
+}
+#section-cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+}
+#div-title{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.fa-bag-shopping{
+  font-size: 30px;
+  color: rgb(255, 213, 98);
+}
+.container-subtotal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid gray;
+}
+#section-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  
 }

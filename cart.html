@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweetzy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Instrument+Serif:ital@0;1&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body id="body-cart">
+  <header>
+    <nav>
+      <ul id="list">
+        <li><a href="#index.html"><img id="img-logo" src="img/logo.png" alt=""></a></li>
+        <li style="width: 100%;"><input id="input-nav" type="text" placeholder="Buscar Produto"></li>
+
+        <li id="cart">
+          <a href="" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div style="display: flex; flex-direction: column; justify-content: center; ">
+              <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;"><span>
+                  <strong>0</strong></span>
+                <p>Itens</p>
+              </div>
+              <p><strong>Cart</strong></p>
+            </div>
+          </a>
+        </li>
+        <li id="login">
+          <a href="" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <i class="fa-solid fa-user"></i>
+            <div style="display: flex; flex-direction: column; justify-content: center; ">
+              <p>Conta</p>
+              <p>Login</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-cart">
+<section id="section-cart">
+  <div id="div-title">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <h1>Shopping Cart</h1>
+  </div>
+
+  <div class="container-subtotal">
+
+    <h1>Order Summary</h1>
+      <div class="div-subtotal">
+                  <p>Subtotal</p>
+                  <Span class="subtotal">$57.20</Span>
+      </div>
+      <div class="div-discount">
+                  <p>Discount</p>
+                  <Span class="subtotal">$5.20</Span>
+      </div>
+      <div class="divider"></div>
+         <div class="div-total">
+                  <p>Total</p>
+                  <Span class="subtotal">$52.00</Span>
+      </div>
+      <button>Proceed to Checkout</button>
+      <button>Continue Shopping</button>
+
+
+  </div>
+</section>
+<section id="section-items">
+  <div>
+    <ul>
+      <li>Product</li>
+      <li>Price</li>
+      <li>Quantity</li>
+      <li>Total</li>
+    </ul>
+  </div>
+  <div>
+    <ul class="list-items"></ul>
+
+  </div>
+  <button> Reset Cart</button>
+
+</section>
+
+
+  </main>
+
+      <script src="cart.js"></script>
+  </body>
