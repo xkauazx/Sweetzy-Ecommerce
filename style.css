@@ -432,3 +432,74 @@ font-weight: bold;
 
   
 }
+.list-category{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+}
+  .cart {
+      width: 100%;
+      max-width: 800px;
+      border-collapse: collapse;
+      margin: auto;
+    }
+
+    .cart-header, .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+    }
+
+    .cart-header {
+      font-weight: bold;
+    }
+
+    .col-product {
+      flex: 3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .col-price, .col-qty, .col-total {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .qty-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qty-controls button {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .qty-controls span {
+      min-width: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .delete-icon {
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 16px;
+    }

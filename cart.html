@@ -80,20 +80,33 @@
   </div>
 </section>
 <section id="section-items">
-  <div>
-    <ul>
-      <li>Product</li>
-      <li>Price</li>
-      <li>Quantity</li>
-      <li>Total</li>
-    </ul>
-  </div>
-  <div>
-    <ul class="list-items"></ul>
+  <div class="cart">
+    <!-- Cabeçalho -->
+    <div class="cart-header">
+      <div class="col-product">Product</div>
+      <div class="col-price">Price</div>
+      <div class="col-qty">Quantity</div>
+      <div class="col-total">Total</div>
+    </div>
 
+    <!-- Item -->
+    <div class="cart-item">
+      <div class="col-product">
+        <span class="delete-icon">🗑️</span>
+        <img src="https://via.placeholder.com/50" alt="Black Pepper" class="product-image">
+        <span>Black Pepper Spice Pack</span>
+      </div>
+      <div class="col-price">$52.00</div>
+      <div class="col-qty">
+        <div class="qty-controls">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="col-total">$52.00</div>
+    </div>
   </div>
-  <button> Reset Cart</button>
-
 </section>
 
 
