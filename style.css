@@ -428,7 +428,7 @@ font-weight: bold;
   align-items: center;
   justify-content: center;
   flex: 2;
-  
+
 
   
 }
@@ -439,21 +439,30 @@ align-items: center;
 justify-content: space-between;
 
 }
-  .cart {
+  .cart{
       width: 100%;
       max-width: 800px;
       border-collapse: collapse;
       margin: auto;
+   
     }
-
-    .cart-header, .cart-item {
+    .cart-header{
+      width: 100%;
       display: flex;
+      flex-direction: row;
+
+    }
+    .cart-info, .cart-list {
+      display: flex;
+      width: 100%;
       align-items: center;
       border-bottom: 1px solid #ddd;
       padding: 12px 0;
+      list-style: none;
+ 
     }
 
-    .cart-header {
+    .cart-info {
       font-weight: bold;
     }
 
