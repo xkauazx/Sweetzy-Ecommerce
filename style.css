@@ -477,7 +477,13 @@ main {
 .cart-info {
   font-weight: bold;
 }
-
+.cart-item{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .col-product {
   flex: 3;
   display: flex;

@@ -13,16 +13,27 @@ products.forEach((product) => {
     const nome = product.dataset.nome;
     const preco = parseFloat(product.dataset.price);
 
-    let counter = 0;
-    subtotal.textContent = 0;
+    let counter = 1;
+    subtotal.textContent = `$${preco.toFixed(2)}`;
 
-    button.addEventListener('click', () => {
+
+  button.addEventListener('click', () => {
         container.classList.toggle('toggle');
         button.style.display = 'none';
         quantity.textContent = counter; 
+        addItem()
+
+
+
     });
 
- 
+    
+    function addItem(){
+        
+
+
+    }
+
     btnLess.addEventListener('click', () => {
          counter++;
         quantity.textContent = counter;
